@@ -403,7 +403,7 @@ const STEPS = [
     html:`
       <p>Swimmers are placed by ability and move up as they improve. A swimmer's age is a guide, not a ceiling. Here's where most start:</p>
       <div class="tiers">
-        <div class="tier"><div class="age">4 – 5 years</div><h4>Learn to Swim</h4><p class="freq">Water confidence &amp; fun. No equipment needed. 2–3 sessions/week.</p></div>
+        <div class="tier"><div class="age">0 – 6 years</div><h4>Learn to Swim</h4><p class="freq">Water confidence &amp; fun. No equipment needed. 2–3 sessions/week.</p></div>
         <div class="tier"><div class="age">6 – 8 years</div><h4>Intermediate</h4><p class="freq">All four strokes &amp; first local meets. 3–4 sessions/week.</p></div>
         <div class="tier"><div class="age">9 years +</div><h4>Advanced</h4><p class="freq">Race pace, strategy &amp; national goals. 4–5 sessions/week.</p></div>
       </div>
@@ -444,11 +444,12 @@ const STEPS = [
     html:`
       <p>A one-off <b>onboarding fee of KES 2,000</b> applies when you join. Then choose a monthly package:</p>
       <div class="tiers">
-        <div class="tier"><div class="age">2 days / week</div><h4>Suggested 4 – 5 yrs</h4><div class="price"><span class="cur">KES</span>7,650<small> /mo</small></div></div>
+        <div class="tier"><div class="age">2 days / week</div><h4>Suggested 0 – 6 yrs</h4><div class="price"><span class="cur">KES</span>7,650<small> /mo</small></div></div>
         <div class="tier"><div class="age">3 days / week</div><h4>Suggested 6–8yrs</h4><div class="price"><span class="cur">KES</span>10,400<small> /mo</small></div></div>
         <div class="tier"><div class="age">4 days / week</div><h4>Suggested 9–11yrs</h4><div class="price"><span class="cur">KES</span>12,250<small> /mo</small></div></div>
         <div class="tier"><div class="age">5 days / week</div><h4>Suggested 12+yrs</h4><div class="price"><span class="cur">KES</span>15,250<small> /mo</small></div></div>
       </div>
+      <p style="font-size:13.5px;color:var(--muted);margin:12px 2px 0">All fees above are exclusive of VAT. VAT is charged separately on all packages.</p>
       <div class="note"><b>How it works:</b> fees are a monthly membership covering program access for that month, due on or before the first training day. You'll get an invoice via WhatsApp or email with an M-Pesa pay button. Missed sessions can't be carried over, and fees are non-refundable once the first session is attended.</div>`
   },
   {
@@ -462,7 +463,7 @@ const STEPS = [
         <div class="ci"><span class="tick">${I.check}</span><div><b>Advanced</b>: the above plus a front-end snorkel</div></div>
         <div class="ci"><span class="tick">${I.check}</span><div><b>Official kit</b> for competitions: t-shirt, hoodie or tracksuit</div></div>
       </div>
-      <div class="note">Buy gear from our partner shop (<b>Skippers Collection · 0720 839 152 or 0740 331 245</b>), Nairobi Sports House or Decathlon. Official NextGen wear (T-shirt KES 1,800 · Hoodie KES 2,800 · Tracksuit KES 4,900) is ordered from our <a href="https://nextgenswimacademy.zohoecommerce.com/" target="_blank">online store</a>. <b>Tip:</b> label every item, as lost property is cleared monthly!</div>`
+      <div class="note">Buy gear from our partner shop (<b>David · 0705 972 332</b>), Nairobi Sports House or Decathlon. Official NextGen wear (T-shirt KES 1,800 · Hoodie KES 2,800 · Tracksuit KES 4,900) is ordered from our <a href="https://nextgenswimacademy.zohoecommerce.com/" target="_blank">online store</a>. <b>Tip:</b> label every item, as lost property is cleared monthly!</div>`
   },
   {
     icon:I.growth, kicker:"Tracking growth", title:["How you'll see ","progress"],
@@ -470,7 +471,7 @@ const STEPS = [
     html:`
       <p><b>You won't receive written report cards, and that's deliberate.</b> A report card captures one moment on paper; it doesn't show how your swimmer is actually developing week to week. Instead, you get two clearer, more honest windows into their progress:</p>
       <div class="feat"><div class="fi">${I.chat}</div><div><h4>Quarterly one-on-one meetings</h4><p>Dedicated time each term to sit with the coach, review strengths and areas to work on, and agree goals for the period ahead. Something urgent in between? The Academy Manager will connect you with the right coach.</p></div></div>
-      <div class="feat"><div class="fi">${I.cloud}</div><div><h4>Live race data on SwimCloud</h4><p>We enter swimmers into competitions roughly every two months — a real, regular benchmark of how they're progressing. Every official result is then uploaded to SwimCloud: personal bests, full race history and improvement over time. Competent swimmers past Learn to Swim race at two-plus meets a season, so you see real, objective performance, not a subjective grade.</p></div></div>
+      <div class="feat"><div class="fi">${I.cloud}</div><div><h4>Live race data on SwimCloud</h4><p>Every official result is uploaded to SwimCloud: personal bests, full race history and improvement over time. Competent swimmers past Learn to Swim race at two-plus meets a season, so you see real, objective performance, not a subjective grade.</p></div></div>
       <div class="feat"><div class="fi">${I.video}</div><div><h4>Optional performance services</h4><p>Five-angle video stroke analysis and monthly sports-psychology sessions. Combine both for KES 3,000/mo, compulsory for swimmers 12+, optional for younger competent swimmers.</p></div></div>
       <div class="feat"><div class="fi">${I.report}</div><div><h4>Termly reports for Learn to Swim</h4><p>Only our Learn to Swim group receives a termly written report, since they aren’t yet racing competitively. For every other level, a gala every month or two gives us objective times to track real progress over the season.</p></div></div>
       <div class="note"><b>Why this beats a report card:</b> between the quarterly meeting and the SwimCloud data, you get a continuous, evidence-based picture of your swimmer, far richer than a slip of paper a few times a year.</div>`
@@ -482,8 +483,7 @@ const STEPS = [
       <div class="feat"><div class="fi">${I.check}</div><div><h4>Attendance</h4><p>Aim for 90%+, as consistency is what drives real progress.</p></div></div>
       <div class="feat"><div class="fi">${I.handshake}</div><div><h4>Poolside etiquette</h4><p>Parents are welcome! Cheer them on, avoid coaching from the sidelines, and chat to coaches after the session.</p></div></div>
       <div class="feat"><div class="fi">${I.storm}</div><div><h4>Weather</h4><p>We train through cold and rain. If thunder is detected we clear the pool for 30 minutes.</p></div></div>
-      <div class="feat"><div class="fi">${I.lock}</div><div><h4>Child protection</h4><p>Every staff member holds a valid certificate of good conduct and safeguarding training.</p></div></div>
-      <div class="note"><b>Focus on the process, not just the outcome.</b> We encourage parents to celebrate effort, consistency, listening to coaches and kindness to teammates — not only medals, trophies and gala positions. That's how champions are really made.</div>`
+      <div class="feat"><div class="fi">${I.lock}</div><div><h4>Child protection</h4><p>Every staff member holds a valid certificate of good conduct and safeguarding training.</p></div></div>`
   },
   {
     icon:I.users, kicker:"Your team", title:["Meet the ","coaches"],
